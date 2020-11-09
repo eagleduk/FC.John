@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        BODY {width : 520px; min-height:250px;}
+    </style>
+
+</head>
+<body>
+    sports.isdc.co.kr 에 로그인 후 사용해 주세요.
+    운동장 :
+    <select name="reservation_grounds">
+        <option value="02">황송공원</option>
+        <option value="04">탄천변A</option>
+        <option value="08">탄천변B</option>
+        <option value="10">상대원 유소년</option>
+        <option value="11">양지 배수지</option>
+    </select>
+
+    <input type="date" name="reservation_date">
+    시간 : 
+    <select name="reservation_numbers">
+        <option value="select_1">1회[06~08]</option>
+        <option value="select_2">2회[08~10]</option>
+        <option value="select_3">3회[10~12]</option>
+        <option value="select_4">4회[12~14]</option>
+        <option value="select_5">5회[14~16]</option>
+        <option value="select_6">6회[16~18]</option>
+        <option value="select_7">7회[18~20]</option>
+        <option value="select_8">8회[20~22]</option>
+    </select>
+
+    단체 인원수 :
+    <input type="number" name="reservation_group_count" value=40>
+
+    대회명 :
+    <input type="text" name="reservation_playname" value="요한축구선교회 정기운동">
+
+    이용목적 :
+    <input type="text" name="reservation_reason" value="요한축구선교회 정기운동">
+
+    자동 예약
+    <input type="checkbox" name="reservation_auto" value=false>
+
+    <button>
+        적용
+    </button>
+    
+    <span name="reservation_result"></span>
+
+    <script src="popup.js"></script>
+</body>
+</html>
